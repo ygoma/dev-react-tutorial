@@ -20,9 +20,9 @@ class Form extends Component {
   submitForm = () => {
     if (this.state.name.trim() !== "" && this.state.job.trim() !== "") {
       this.props.handleSubmit(this.state);
-      toast.success("New character added");
+      toast.success("Nouvelle personne ajoutée");
     } else {
-      toast.warning("Please enter the name and the job");
+      toast.warning("Entrez le nom et le job SVP!");
     }
     this.setState(this.initialState);
   };

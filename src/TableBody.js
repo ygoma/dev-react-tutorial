@@ -11,7 +11,7 @@ const TableBody = (props) => {
           <button
             onClick={() => {
               props.removeCharacter(index);
-              toast.success(row.name + " deleted");
+              toast.success(row.name + " supprimé");
             }}
           >
             Delete
